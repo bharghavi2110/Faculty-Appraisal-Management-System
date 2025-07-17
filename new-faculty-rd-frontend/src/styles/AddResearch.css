@@ -1,0 +1,89 @@
+/* AddResearch.css */
+
+.add-research-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #fdfdfd;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.add-research-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 28px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input,
+form select {
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #5b8def;
+  outline: none;
+  box-shadow: 0 0 8px rgba(91, 141, 239, 0.3);
+}
+
+button[type="submit"] {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #5b8def;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4178d4;
+}
+
+/* New table styles */
+.research-table {
+  width: 100%;
+  margin-top: 40px;
+  border-collapse: collapse;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+}
+
+.research-table th,
+.research-table td {
+  padding: 14px 20px;
+  text-align: left;
+}
+
+.research-table th {
+  background-color: #5b8def;
+  color: white;
+  font-weight: 600;
+}
+
+.research-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.research-table tr:hover {
+  background-color: #eef3fc;
+  transition: 0.3s;
+}
+
+.no-data {
+  margin-top: 20px;
+  text-align: center;
+  color: #777;
+}

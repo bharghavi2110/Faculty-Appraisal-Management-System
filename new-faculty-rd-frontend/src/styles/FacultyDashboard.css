@@ -1,0 +1,125 @@
+/* FacultyDashboard.css */
+
+.dashboard-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  font-family: "Times New Roman", Times, serif;
+  background-color: #f0f4f7;
+  position: relative; /* Needed for absolute positioning of the bell */
+}
+
+.dashboard-container h1 {
+  font-size: 36px;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.dashboard-container button {
+  padding: 14px 28px;
+  font-size: 20px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-container button:hover {
+  background-color: #005fa3;
+  transform: scale(1.05);
+}
+
+.dashboard-header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the title */
+  align-items: center;
+  padding: 1rem 0;
+  position: relative; /* Needed to position notification-area within header */
+}
+
+.notification-area {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.notification-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.notification-icon {
+  font-size: 2.5rem;
+  color: #f60428; /* Adjust icon color if needed */
+}
+
+.notification-badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: yellow; /* Set badge color to yellow */
+  color: black; /* Adjust badge text color if needed */
+  border-radius: 50%;
+  padding: 0.3rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.notifications-dropdown {
+  position: absolute;
+  top: 2.5rem;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  z-index: 10;
+  width: 250px;
+  text-align: left;
+}
+
+.notifications-dropdown h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+.notifications-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notifications-dropdown li {
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.notifications-dropdown li:last-child {
+  border-bottom: none;
+}
+
+.notifications-dropdown li p {
+  margin-bottom: 0.2rem;
+  color: #555;
+}
+
+.notifications-dropdown li small {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.dashboard-content {
+  display: flex;
+  gap: 20px; /* Adjust gap between buttons */
+  margin-top: 3rem; /* Adjust top margin for buttons */
+}
